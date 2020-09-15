@@ -1,6 +1,3 @@
   <link rel="stylesheet" href="css/style.css" ><!-- style.css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css"><!-- bootstrap-CSS -->
-  <link rel="stylesheet" href="css/bootstrap-select.css"><!-- bootstrap-select-CSS -->
-  <link rel="stylesheet" href="css/flexslider.css" ><!-- flexslider-CSS -->
-  <link rel="stylesheet" href="css/font-awesome.min.css" ><!-- fontawesome-CSS -->
-  <link rel="stylesheet" href="css/menu_sideslide.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet"/>

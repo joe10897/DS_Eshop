@@ -19,19 +19,18 @@ $iconList=array("fa fa-bug","fa fa-television","fa fa-rebel","fa fa-smile-o","fa
 <html lang="en">
 
 </head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <?php include("css.php"); ?>
 <link rel="stylesheet" href="css/stock.css">
-<link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/shopping_cart.css">
 <body>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+  <!--ゆっくり上げる-->
+  <!--トップ上げる-->
+  <script type="text/javascript" src="js/totop.min.js"></script>
+  <!--ゆっくり上げる-->
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
   <!-- Navigation -->
   <!-- //Navigation -->
   <!-- header -->
-      <?php include("Menu.php"); ?>
   <div class="container">
     <div class="row agile-its-header">
       <div class="logo">
@@ -73,25 +72,9 @@ function showDivs(n) {
       <div class="w3-categories">
         <h3>Browse Categories</h3>
         <div class="container">
-          <?php
-          $i=0;
-          while ( $i<count($allType) )
-          {
-            $icon=$iconList[$i];
-            $type=$allType[$i];
-            $categoryName=$allType[$i];
-            include('CategoryIcon.php');
-            $i++;
-          }
-          ?>
         </div>
       </div>
-
     </div>
-
-    <?php
-    include("below.php");
-    ?>
   </div>
 </body>
 </html>
