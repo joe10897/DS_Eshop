@@ -1,0 +1,21 @@
+[data-theme="light"] {
+  --theme-color: #fff;
+  --theme-color-opacity-4: rgba(255, 255, 255, 0.4);
+  --revert-theme-color: #000;
+  --revert-theme-color-opacity-4: rgba(0, 0, 0, 0.4);
+  --main-theme-color: #333;
+  --main-bg-color: #eee;
+  --main-text-color: #333;
+  --sec-text-color: #666;
+}
+/* switch to dark mode color */
+[data-theme="dark"] {
+  --theme-color: #000;
+  --theme-color-opacity-4: rgba(0, 0, 0, 0.4);
+  --revert-theme-color: #fff;
+  --revert-theme-color-opacity-4: rgba(255, 255, 255, 0.4);
+  --main-theme-color: #eee;
+  --main-bg-color: #333;
+  --main-text-color: #eee;
+  --sec-text-color: #bbb;
+}
