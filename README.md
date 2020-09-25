@@ -1,4 +1,4 @@
-# Music
+# DS_Eshop
 
 React + redux start up kit.
 
