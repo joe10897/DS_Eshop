@@ -11,15 +11,15 @@ const WithAuth: React.FC<WithAuthProps> = ({ children }) => {
   const { pathname } = useLocation();
   const history = useHistory();
   const isLogin = true;
-  useEffect(() => {
-    if (isLogin) {
-      if (pathname === PATH.LOGIN || pathname === "/") {
-        history.push(PATH.DASHBOARD);
-      }
-    } else if (pathname !== PATH.LOGIN) {
-      history.push(PATH.LOGIN);
-    }
-  }, [pathname]);
+  // useEffect(() => {
+  //   if (isLogin) {
+  //     if (pathname === PATH.LOGIN || pathname === "/") {
+  //       history.push(PATH.DASHBOARD);
+  //     }
+  //   } else if (pathname !== PATH.LOGIN) {
+  //     history.push(PATH.LOGIN);
+  //   }
+  // }, [pathname]);
 
   return children;
 };

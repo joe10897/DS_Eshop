@@ -18,12 +18,12 @@ function App() {
     <div className={styles.app} data-theme={theme} id="scroll_container">
       <Router>
         <Switch>
-          <WithAuth>
-            <Header />
-            <Route path={"/dashboard"} component={Dashboard} />
-            <Route path={"/login"} component={Login} />
-            <Route path={"/seller"} component={Seller} />
-          </WithAuth>
+          {/* <WithAuth> */}
+          <Header />
+          <Route path={"/dashboard"} component={Dashboard} />
+          <Route path={"/login"} component={Login} />
+          <Route path={"/seller"} component={Seller} />
+          {/* </WithAuth> */}
         </Switch>
       </Router>
     </div>
