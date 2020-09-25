@@ -1,12 +1,12 @@
 const LOGIN = "/login";
 const DASHBOARD = "/dashboard";
-const EXPLORE = "/explore";
+const SELLER = "/seller";
 const ADMIN = "/admin";
 
 const PATH = {
   LOGIN,
   DASHBOARD,
-  EXPLORE,
+  SELLER,
   ADMIN,
 };
 

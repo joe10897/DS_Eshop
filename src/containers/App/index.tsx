@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { hot } from "react-hot-loader/root";
 
 import WithAuth from "../../hoc/WithAuth";
-import Login from "../../components/Login";
 import Header from "../../components/Header";
 import Dashboard from "../Dashboard";
+import Seller from "../Seller";
+import Login from "../Login";
 
 import PATH from "../../utils/pathConst";
 import styles from "./styles.scss";
@@ -19,8 +20,9 @@ function App() {
         <Switch>
           <WithAuth>
             <Header />
-            <Route path={PATH.DASHBOARD} component={Dashboard} />
-            <Route path={PATH.LOGIN} component={Login} />
+            <Route path={"/dashboard"} component={Dashboard} />
+            <Route path={"/login"} component={Login} />
+            <Route path={"/seller"} component={Seller} />
           </WithAuth>
         </Switch>
       </Router>

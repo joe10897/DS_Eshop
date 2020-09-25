@@ -1,0 +1,43 @@
+.navItem_container {
+  display: flex;
+  width: 100%;
+  height: 3.4rem;
+  justify-content: center;
+  align-content: center;
+}
+.navItem_container_contain {
+  display: flex;
+  width: 1200px;
+  justify-content: flex-end;
+  align-self: center;
+}
+
+.signinLogin {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-style: normal;
+  opacity: 1;
+  border-right: 2px solid hsla(0, 0%, 100%, 0.22);
+  cursor: pointer;
+  &-active,
+  &:hover {
+    opacity: 0.4;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .navIcon {
+    display: none;
+  }
+  .title {
+    display: block;
+  }
+}
