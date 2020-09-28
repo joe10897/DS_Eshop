@@ -3,7 +3,7 @@ import { Link, Router, Route, useHistory } from "react-router-dom";
 
 import styles from "./styles.scss";
 
-interface HeaderProps { }
+interface HeaderProps {}
 
 const NavItem: React.FC<HeaderProps> = () => {
   const isLogin = false;
@@ -17,7 +17,7 @@ const NavItem: React.FC<HeaderProps> = () => {
     history.push(path);
   }, []);
   const routeChangeToSignUp = useCallback(() => {
-    var path = "/signup";
+    var path = "/login/signup";
     history.push(path);
   }, []);
   const routeChangeToLogin = useCallback(() => {

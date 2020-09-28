@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
+import { Link, Route, useHistory, useLocation } from "react-router-dom";
 
 import styles from "./styles.scss";
 
-import Header from "../../components/Header/headerComponents/LoginHeader";
-interface LoginProps { }
+//import Header from "../../components/Header/headerComponents/LoginHeader";
+import ForLogin from "../../components/LoginInPage/ForLogin";
+import ForSignup from "../../components/LoginInPage/ForSignUp";
+interface LoginProps {}
 
 const Login = () => {
+  // const history = useHistory();
+  // const routeChangeToSignup = useCallback(() => {
+  //   var path = "/login/signup";
+  //   history.push(path);
+  // }, []);
+
   return (
     <div className={styles.container}>
-      <Header />
-      <div className={styles.top_Padding}></div>
-      <div className={styles.loginContent}></div>
+      <Route exact path={"/login"} component={ForLogin} />
+      <Route path={"/login/signup"} component={ForSignup} />
     </div>
   );
 };

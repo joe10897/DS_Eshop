@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { hot } from "react-hot-loader/root";
 
 import WithAuth from "../../hoc/WithAuth";
-import Header from "../../components/Header";
 import Dashboard from "../Dashboard";
 import Seller from "../Seller";
 import Login from "../Login";

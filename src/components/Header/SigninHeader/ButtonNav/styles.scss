@@ -1,0 +1,53 @@
+.navItem_container {
+  display: flex;
+  width: 100%;
+  height: 84px;
+  justify-content: center;
+}
+.navItem_container_contain {
+  display: flex;
+  width: 1200px;
+  height: 84px;
+  align-items: center;
+}
+.icon {
+  cursor: pointer;
+  height: 50px;
+  width: 162px;
+  background-image: url(../../../../image/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-right: 40px;
+}
+.title {
+  display: flex;
+  color: #222;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 2.4rem;
+}
+.optionTitle {
+  cursor: pointer;
+  display: flex;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-style: normal;
+  opacity: 1;
+  border-right: 2px solid hsla(0, 0%, 100%, 0.22);
+  &-active,
+  &:hover {
+    opacity: 0.4;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .navIcon {
+    display: none;
+  }
+  .title {
+    display: block;
+  }
+}

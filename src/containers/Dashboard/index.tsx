@@ -2,8 +2,8 @@ import React from "react";
 
 import styles from "./styles.scss";
 
-import Header from "../../components/Header/headerComponents/MainHeader";
-interface DashboardProps { }
+import Header from "../../components/Header/MainHeader";
+interface DashboardProps {}
 
 const Dashboard = () => {
   return (
