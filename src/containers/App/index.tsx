@@ -19,8 +19,8 @@ function App() {
       <Router>
         <Switch>
           {/* <WithAuth> */}
-          <Header />
-          <Route path={"/dashboard"} component={Dashboard} />
+          {/* <Header /> */}
+          <Route exact path={"/"} component={Dashboard} />
           <Route path={"/login"} component={Login} />
           <Route path={"/seller"} component={Seller} />
           {/* </WithAuth> */}

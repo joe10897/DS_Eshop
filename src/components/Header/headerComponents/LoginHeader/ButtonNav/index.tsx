@@ -3,13 +3,13 @@ import { Link, Router, Route, useHistory } from "react-router-dom";
 
 import styles from "./styles.scss";
 
-interface HeaderProps {}
+interface HeaderProps { }
 
 const NavItem: React.FC<HeaderProps> = () => {
   const history = useHistory();
 
   const routeChangeToDashboard = useCallback(() => {
-    var path = "/dashboard";
+    var path = "/";
     history.push(path);
   }, []);
 
