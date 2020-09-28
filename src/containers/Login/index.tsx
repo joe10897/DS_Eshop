@@ -10,7 +10,7 @@ const Login = () => {
     <div className={styles.container}>
       <Header />
       <div className={styles.top_Padding}></div>
-      <div>Login</div>
+      <div className={styles.loginContent}></div>
     </div>
   );
 };
